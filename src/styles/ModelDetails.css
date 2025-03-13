@@ -1,0 +1,129 @@
+/* Model Details Container */
+.model-details-container {
+    padding: 5% 10%;
+    background: linear-gradient(135deg, #E8F4F3 0%, #F9EDE1 100%); /* Pastel gradient */
+  }
+  
+  /* Header Section */
+  .header-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header-title {
+    font-size: 2.5rem;
+    color: #2B6F5E; /* Deep Mint Green */
+    margin-bottom: 10px;
+  }
+  
+  /* Section Styling */
+  .section-title {
+    font-size: 2rem;
+    color: #2B6F5E; /* Deep Mint Green */
+    margin-bottom: 20px;
+  }
+  
+  .section-text {
+    font-size: 1rem;
+    color: #4A4A4A; /* Warm Gray */
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Architecture List */
+  .architecture-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .architecture-list li {
+    font-size: 1rem;
+    color: #4A4A4A; /* Warm Gray */
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .architecture-list li::before {
+    content: "•";
+    color: #88C9BF; /* Pastel Turquoise */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+  
+  /* Accuracy Graph */
+  .accuracy-graph {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .graph-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .graph-caption {
+    font-size: 0.9rem;
+    color: #6B8E8C; /* Muted Teal */
+    margin-top: 10px;
+  }
+  
+  .red-text {
+    color: #FF6B6B; /* Red for training accuracy */
+    font-weight: 600;
+  }
+  
+  .blue-text {
+    color: #6B8E8C; /* Blue for validation accuracy */
+    font-weight: 600;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 2rem;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .section-text {
+      font-size: 0.9rem;
+    }
+  
+    .architecture-list li {
+      font-size: 0.9rem;
+    }
+  
+    .graph-caption {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-title {
+      font-size: 1.5rem;
+    }
+  
+    .section-title {
+      font-size: 1.2rem;
+    }
+  
+    .section-text {
+      font-size: 0.8rem;
+    }
+  
+    .architecture-list li {
+      font-size: 0.8rem;
+    }
+  
+    .graph-caption {
+      font-size: 0.7rem;
+    }
+  }

@@ -1,0 +1,103 @@
+/* Dual Content Container */
+.dual-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%; /* Add padding for spacing */
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(45deg, #F5F9E9 0%, #EDF3F8 100%); /* Pastel gradient */
+  }
+  
+  /* Left and Right Content */
+  .left-content,
+  .right-content {
+    width: 45%; /* Each side takes 45% of the container */
+    text-align: center;
+  }
+  
+  /* Image Styling */
+  .content-image {
+    width: 100%; /* Responsive width */
+    max-width: 300px; /* Limit image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between image and headline */
+  }
+  
+  /* Headline Styling */
+  .left-headline,
+  .right-headline {
+    font-size: 2rem;
+    color: #2B6F5E; /* Deep Mint Green for headlines */
+    margin-bottom: 15px;
+  }
+  
+  /* Subtext Styling */
+  .left-subtext,
+  .right-subtext {
+    font-size: 1rem;
+    color: #6B8E8C; /* Muted Teal for subtext */
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .content-button {
+    background: #88C9BF; /* Pastel Turquoise for buttons */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .content-button:hover {
+    background: #6B8E8C; /* Muted Teal for hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dual-content-container {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      padding: 10% 5%;
+    }
+  
+    .left-content,
+    .right-content {
+      width: 100%; /* Full width for stacked content */
+      margin-bottom: 40px;
+    }
+  
+    .content-image {
+      max-width: 250px; /* Smaller images for mobile */
+    }
+  
+    .left-headline,
+    .right-headline {
+      font-size: 1.8rem;
+    }
+  
+    .left-subtext,
+    .right-subtext {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .left-headline,
+    .right-headline {
+      font-size: 1.5rem;
+    }
+  
+    .left-subtext,
+    .right-subtext {
+      font-size: 0.8rem;
+    }
+  
+    .content-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,125 @@
+/* Thank You Container */
+.thank-you-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 2rem;
+  background-color: #f3f8ff;
+  position: relative; /* For GitHub link positioning */
+}
+
+/* Main Content */
+.thank-you-content {
+  text-align: center;
+  max-width: 800px; /* Limit content width */
+  margin-bottom: 2rem;
+}
+
+/* Thank You Title */
+.thank-you-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #6b9080;
+  margin-bottom: 20px;
+}
+
+/* Thank You Message */
+.thank-you-message {
+  font-size: 1.25rem;
+  color: #3a3a3a;
+  margin-top: 1rem;
+  margin-bottom: 40px;
+}
+
+/* Disclaimer Section */
+.disclaimer-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.disclaimer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff9a8b;
+  margin-bottom: 15px;
+}
+
+.disclaimer-text {
+  font-size: 1rem;
+  color: #3a3a3a;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+/* GitHub Profile Link */
+.github-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.github-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.name-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
+.github-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.github-icon:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .thank-you-title {
+    font-size: 2.5rem;
+  }
+
+  .thank-you-message {
+    font-size: 1rem;
+  }
+
+  .disclaimer-title {
+    font-size: 1.3rem;
+  }
+
+  .disclaimer-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .thank-you-title {
+    font-size: 2rem;
+  }
+
+  .thank-you-message {
+    font-size: 0.9rem;
+  }
+
+  .disclaimer-title {
+    font-size: 1.1rem;
+  }
+
+  .disclaimer-text {
+    font-size: 0.8rem;
+  }
+}
