@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import "../styles/Prediction.css";
 
 const galleryImages = [
-  "/src/assets/images/CTA/Applescab.JPG",
-  "/src/assets/images/CTA/Apple___Black_rot.JPG",
-  "/src/assets/images/CTA/Apple___healthy.JPG",
-  "/src/assets/images/CTA/Potato___Late_blight.JPG",
-  "/src/assets/images/CTA/Orange___Haunglongbing.JPG",
-  "/src/assets/images/CTA/Potato___healthy.JPG",
+  "./src/assets/images/CTA/Applescab.JPG",
+  "./src/assets/images/CTA/Apple___Black_rot.JPG",
+  "./src/assets/images/CTA/Apple___healthy.JPG",
+  "./src/assets/images/CTA/Potato___Late_blight.JPG",
+  "./src/assets/images/CTA/Orange___Haunglongbing.JPG",
+  "./src/assets/images/CTA/Potato___healthy.JPG",
 ];
 
 const Prediction = () => {
